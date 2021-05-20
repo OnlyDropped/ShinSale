@@ -1,0 +1,138 @@
+@media screen and (max-width: 375px) {
+  .header {
+    &__content {
+      padding: 13px 0px 12px;
+      align-items: center;
+    }
+    &__contact-link {
+      display: none;
+    }
+    &__contact-lk {
+      display: none;
+    }
+    &__contact-item + .header__contact-item {
+      margin-left: 10px;
+    }
+    &__btn {
+      display: block;
+      padding: 0px;
+      border: none;
+      background-color: inherit;
+      z-index: 99;
+    }
+    &__nav-item:nth-child(6) {
+      display: none;
+    }
+    &__nav-items {
+      position: absolute;
+      display: block;
+      top: 0px;
+      left: 0px;
+      background: blanchedalmond;
+      width: 100%;
+      transform: translateY(-1000%);
+      transition: all 0.8s;
+    }
+    &__nav-items {
+      padding: 0;
+    }
+    &__nav-item {
+      text-align: center;
+      margin-bottom: 5px;
+      border-bottom: 1px solid #000;
+    }
+    &__nav-link {
+      font-size: 16px;
+      line-height: 48px;
+    }
+    &__nav-items--active {
+      transform: translateY(0%);
+    }
+    &__nav {
+      padding: 0;
+    }
+  }
+  .podbor {
+    background-image: none;
+    padding: 24px 0px;
+    &__inner {
+      flex-direction: column;
+    }
+    &__box {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+    &__tabs {
+      max-width: 343px;
+    }
+    &__button {
+      flex-direction: column;
+    }
+    &__width,
+    &__profil,
+    &__diametr,
+    &__season {
+      width: 100%;
+    }
+    &__reset {
+      display: none;
+    }
+    &__diametr {
+      margin-bottom: 20px;
+    }
+    &__season {
+      margin-bottom: 20px;
+    }
+  }
+  .we {
+    padding: 20px 0 20px;
+    &__inner {
+      flex-direction: column;
+    }
+    &__box {
+      margin-bottom: 24px;
+    }
+    &__box img {
+      margin: 0 auto 12px;
+    }
+    &__text {
+      max-width: 100%;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+      text-transform: uppercase;
+      color: rgba(0, 0, 0, 0.87);
+      margin-bottom: 8px;
+    }
+    &__description {
+      max-width: 100%;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+      color: rgba(0, 0, 0, 0.87);
+    }
+  }
+  .info {
+    background: #ffffff;
+    padding: 40px 0 34px;
+    &__title {
+      font-size: 16px;
+      line-height: 19px;
+      color: rgba(0, 0, 0, 0.87);
+    }
+    &__inner {
+      flex-direction: column;
+    }
+    &__inner-content {
+      margin-bottom: 16px;
+    }
+  }
+  .footer {
+    &__box {
+      color: rgba(0, 0, 0, 0.87);
+    }
+    &__inner {
+      flex-direction: column;
+    }
+  }
+}
